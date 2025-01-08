@@ -46,7 +46,6 @@ const Main = () => {
     <div>
       <section id="home">
         <HomePage />
-        <BannerPage2 />
       </section>
 
       <section id="Partners" className={style.darkSection}>

@@ -6,9 +6,9 @@ const BannerPage2 = () => {
     <div className={style.section_container}>
       <Container>
         <div className={style.text_section}>
-          <h2 className={style.text_title}>
+          <h1 className={style.text_title}>
             Empower your teams to defend against threats
-          </h2>
+          </h1>
           <div className={style.button_section}>
             <Button
               size="huge"
