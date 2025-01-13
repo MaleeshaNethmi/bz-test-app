@@ -26,12 +26,12 @@ const Step = ({ img, title, desc }) => (
 
 const BugZeroOffer = () => (
   <div
-    style={{ padding: "6em 0em", border: "none:", backgroundColor: "#212121" }}
+    style={{ padding: "6em 0em", border: "none:", backgroundColor: "#121212" }}
   >
     <Container text>
-      <Header as="h3" style={{ fontSize: "1.5em", color: "white" }}>
+      <div style={{ fontSize: "30px", color: "white" }}>
         Bug Zero is now offering
-      </Header>
+      </div>
       <br></br>
     </Container>
     <Grid container doubling columns={3}>
