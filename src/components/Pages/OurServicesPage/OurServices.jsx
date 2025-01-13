@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+
+import tick from "../../../Assets/tick.png";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import {
   CardHeader,
@@ -15,8 +17,9 @@ const CardX = (props) => {
   return (
     <Card
       style={{
-        height: "420px",
-        width: "400px",
+        height: "430px",
+        padding: "7.5px 10px",
+        width: "410px",
         backgroundColor: "#212121",
         margin: "15px 50px",
         border: "2.5px solid #f4c700",
@@ -31,14 +34,26 @@ const CardX = (props) => {
         }}
       >
         <CardHeader
-          style={{ marginTop: "5px", color: "#f4c700 ", fontSize: "40px" }}
+          style={{
+            whiteSpace: "pre-line",
+            marginTop: "5px",
+            color: "#f4c700 ",
+            fontSize: "40px",
+            textAlign: "left",
+          }}
         >
-          <IoMdCheckmarkCircleOutline style={{ color: "#f4c700" }} />
+          <img src={tick} alt="" width={50} />
           <br />
           {props.name}
         </CardHeader>
+        <br />
         <CardDescription
-          style={{ color: "white", fontSize: "20px", justifyContent: "left" }}
+          style={{
+            color: "white",
+            fontSize: "24px",
+            textAlign: "left",
+            lineHeight: "1.2em",
+          }}
         >
           {props.message}
         </CardDescription>
@@ -84,20 +99,20 @@ const OurServices = () => {
       >
         <h1
           style={{
-            marginBottom: "80px",
+            marginBottom: "25px",
             color: "  #f4c700 ",
             fontSize: "40px",
           }}
         >
           All in one Vulnerability Management Platform
         </h1>
-        <div style={{ color: "white", marginBottom: "50px", fontSize: "30px" }}>
-          Our Services Includes{" "}
+        <div style={{ color: "white", marginBottom: "80px", fontSize: "30px" }}>
+          Our Services Includes
         </div>
 
         <CardGroup style={{ display: "flex", justifyContent: "center" }}>
           <CardX
-            name={"Bug Bounty"}
+            name={"Bug\nBounty"}
             message={
               "Bug Zero connects ethical hackrs with organizations,allowing them to identify and fix system vulnerabilities."
             }

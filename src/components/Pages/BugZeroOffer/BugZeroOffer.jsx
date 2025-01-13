@@ -2,9 +2,7 @@ import React from "react";
 import "../BugZeroUnique/Unique.css";
 import { GridColumn, Grid, Container, Header, Image } from "semantic-ui-react";
 
-import clock from "../../../Assets/clock.png";
-import equalizer from "../../../Assets/equalizer.png";
-import iteration from "../../../Assets/iteration.png";
+import tick from "../../../Assets/tick.png";
 
 const Step = ({ img, title, desc }) => (
   <GridColumn>
@@ -35,9 +33,9 @@ const BugZeroOffer = () => (
       <br></br>
     </Container>
     <Grid container doubling columns={3}>
-      <Step img={clock} title="Incident Response Mastery" />
-      <Step img={equalizer} title="Secure Coding Practices" />
-      <Step img={iteration} title="Threat Awareness and Mitigation" />
+      <Step img={tick} title="Incident Response Mastery" />
+      <Step img={tick} title="Secure Coding Practices" />
+      <Step img={tick} title="Threat Awareness and Mitigation" />
     </Grid>
     <br />
     <br />
