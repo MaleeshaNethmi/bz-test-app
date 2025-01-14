@@ -2,9 +2,7 @@ import React from "react";
 import "../BugZeroUnique/Unique.css";
 import { GridColumn, Grid, Container, Header, Image } from "semantic-ui-react";
 
-import clock from "../../../Assets/clock.png";
-import equalizer from "../../../Assets/equalizer.png";
-import iteration from "../../../Assets/iteration.png";
+import tick from "../../../Assets/tick.png";
 
 const Step = ({ img, title, desc }) => (
   <GridColumn>
@@ -26,18 +24,18 @@ const Step = ({ img, title, desc }) => (
 
 const BugZeroOffer = () => (
   <div
-    style={{ padding: "6em 0em", border: "none:", backgroundColor: "#212121" }}
+    style={{ padding: "6em 0em", border: "none:", backgroundColor: "#121212" }}
   >
     <Container text>
-      <Header as="h3" style={{ fontSize: "1.5em", color: "white" }}>
+      <div style={{ fontSize: "30px", color: "white" }}>
         Bug Zero is now offering
-      </Header>
+      </div>
       <br></br>
     </Container>
     <Grid container doubling columns={3}>
-      <Step img={clock} title="Incident Response Mastery" />
-      <Step img={equalizer} title="Secure Coding Practices" />
-      <Step img={iteration} title="Threat Awareness and Mitigation" />
+      <Step img={tick} title="Incident Response" desc="Mastery" />
+      <Step img={tick} title="Secure Coding" desc="Practices" />
+      <Step img={tick} title="Threat Awareness" desc="and Mitigation" />
     </Grid>
     <br />
     <br />
