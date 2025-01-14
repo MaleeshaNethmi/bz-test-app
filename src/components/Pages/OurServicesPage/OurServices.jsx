@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import tick from "../../../Assets/tick.png";
-import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+
 import {
   CardHeader,
   CardGroup,
@@ -9,6 +9,7 @@ import {
   CardContent,
   Button,
   Card,
+  Icon,
 } from "semantic-ui-react";
 
 import "./OurServices.css";
@@ -67,6 +68,7 @@ const CardX = (props) => {
               borderRadius: "35px",
             }}
           >
+            <Icon name="right arrow" style={{ marginRight: "10px" }} />
             Learn More
           </Button>
         </div>

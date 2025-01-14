@@ -33,9 +33,9 @@ const BugZeroOffer = () => (
       <br></br>
     </Container>
     <Grid container doubling columns={3}>
-      <Step img={tick} title="Incident Response Mastery" />
-      <Step img={tick} title="Secure Coding Practices" />
-      <Step img={tick} title="Threat Awareness and Mitigation" />
+      <Step img={tick} title="Incident Response" desc="Mastery" />
+      <Step img={tick} title="Secure Coding" desc="Practices" />
+      <Step img={tick} title="Threat Awareness" desc="and Mitigation" />
     </Grid>
     <br />
     <br />

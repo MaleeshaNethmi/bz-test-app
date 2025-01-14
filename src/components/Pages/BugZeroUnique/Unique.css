@@ -41,7 +41,7 @@
 .step {
   border: 1.5px solid #f4c700 !important;
   background-color: #f4c7002a !important;
-  background: linear-gradient(120deg, #f4c7002a, #f4c70054) !important;
+  background: linear-gradient(120deg, #0f0f092a, #5a4c10) !important;
   background-size: 200% 100% !important;
   background-position: 100% 0 !important;
   transition: background-position 0.5s !important;
@@ -65,3 +65,4 @@
 .step .description {
   font-size: 18px !important;
 }
+/* background: linear-gradient(120deg, #f4c7002a, #f4c70054) !important; #4f4310 #2625222a*/
