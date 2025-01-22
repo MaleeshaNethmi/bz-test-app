@@ -51,7 +51,7 @@ const SecureOrganization = () => {
                 style={{
                   boxShadow: "none",
                   width: "100%",
-                  textAlign: "left",
+                  textAlign: "center",
                   backgroundColor: "#212121",
                 }}
               >
