@@ -1,4 +1,4 @@
-import style from "../BannerPage/BannerPage.module.css";
+import style from "./BannerPage2.module.css";
 import { Button, Container, Icon } from "semantic-ui-react";
 import BugZeroOffer from "../BugZeroOffer/BugZeroOffer";
 import OurServices from "../OurServicesPage/OurServices";
