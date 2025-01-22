@@ -51,7 +51,7 @@ const CardX = (props) => {
         <CardDescription
           style={{
             color: "white",
-            fontSize: "24px",
+            fontSize: "20px",
             textAlign: "left",
             lineHeight: "1.2em",
           }}
