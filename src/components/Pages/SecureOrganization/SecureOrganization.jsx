@@ -11,6 +11,7 @@ import imgmoney from "../../../Assets/money.png";
 import imgbudget from "../../../Assets/budget.png";
 import imgeyescan from "../../../Assets/eye-scanner.png";
 import imgnetwork from "../../../Assets/networking.png";
+import useIsMobile from "../../../components/Reusable/useIsMobile/useIsMobile.js";
 
 const cardData = [
   {
@@ -32,6 +33,8 @@ const cardData = [
 ];
 
 const SecureOrganization = () => {
+  const isMobile = useIsMobile(700);
+
   return (
     <Segment style={{ padding: "6em 0em", border: "none" }} vertical>
       <Container text>
@@ -44,7 +47,7 @@ const SecureOrganization = () => {
         <br />
       </Container>
       <Container>
-        <Grid container doubling columns={4}>
+        <Grid container doubling columns={isMobile ? 2 : 4}>
           {cardData.map((card, index) => (
             <Grid.Column key={index} textAlign="left" className="clipArt">
               <Card
