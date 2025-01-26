@@ -6,6 +6,7 @@ import {
   Image,
   Segment,
 } from "semantic-ui-react";
+import useIsMobile from "../../../components/Reusable/useIsMobile/useIsMobile.js";
 
 const cardData = [
   {
@@ -27,6 +28,8 @@ const cardData = [
 ];
 
 const EarnMoney = () => {
+  const isMobile = useIsMobile();
+
   return (
     <Segment style={{ padding: "6em 0em", border: "none" }} vertical>
       <Container text>
@@ -41,7 +44,7 @@ const EarnMoney = () => {
         </p>
       </Container>
       <Container>
-        <Grid container doubling columns={4}>
+        <Grid container doubling columns={isMobile ? 2 : 4}>
           {cardData.map((card, index) => (
             <Grid.Column key={index} className="clipArt">
               <Card

@@ -1,4 +1,5 @@
 import { Card, Container, Grid, Header, Segment } from "semantic-ui-react";
+import useIsMobile from "../../../components/Reusable/useIsMobile/useIsMobile.js";
 
 const statsData = [
   {
@@ -20,6 +21,8 @@ const statsData = [
 ];
 
 const BugBountyStats = () => {
+  const isMobile = useIsMobile();
+
   return (
     <Segment vertical style={{ padding: "6em 0em", border: "none" }} id="grey">
       <Container text style={{ marginBottom: "3em" }}>
@@ -30,7 +33,7 @@ const BugBountyStats = () => {
       <Container>
         <Grid
           container
-          columns={4}
+          columns={isMobile ? 2 : 4}
           doubling
           style={{
             display: "flex",

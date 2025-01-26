@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import {
   Segment,
   Container,
@@ -8,6 +7,7 @@ import {
 } from "semantic-ui-react";
 import { Stepper } from "react-form-stepper";
 import "./EndtoEndSuppor.css";
+import useIsMobile from "../../../components/Reusable/useIsMobile/useIsMobile.js";
 
 const Step = ({ num, title }) => (
   <GridColumn style={{ maxWidth: 300, marginBottom: "1em" }}>
@@ -36,23 +36,14 @@ const Step = ({ num, title }) => (
 );
 
 const EndtoEndSupport = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 700);
+  const isMobile = useIsMobile();
+
   const steps = [
     "Define policy Scope and Rewards",
     "Define Right Tester",
     "Validate and prioratize vulnalabilities",
     "Verify and Intergrate",
   ];
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 700);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   return (
     <Segment
