@@ -7,6 +7,9 @@ import SignIn from "./components/Pages/SignInPage/SignIn";
 import JoinwithUs from "./components/Pages/JoinwithUs/JoinwithUs";
 import NotFoundPAge from "./components/Pages/404Page/NotFoundPAge";
 import BannerPage2 from "./components/Pages/BannerPage2/BannerPage2";
+import BannerPage3 from "./components/Pages/BannerPage3/BannerPage3";
+import BannerPage4 from "./components/Pages/BannerPage4/BannerPage4";
+import BannerPage5 from "./components/Pages/BannerPage5/BannerPage5";
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
         <Route path="/bz-test-app/signin" element={<SignIn />} />
         <Route path="/bz-test-app/joinwithus" element={<JoinwithUs />} />
         <Route path="/bz-test-app/new" element={<BannerPage2 />} />
+        <Route path="/bz-test-app/third" element={<BannerPage3 />} />
+        <Route path="/bz-test-app/fourth" element={<BannerPage4 />} />
+        <Route path="/bz-test-app/fifth" element={<BannerPage5 />} />
         <Route path="/bz-test-app/*" element={<NotFoundPAge />} />
       </Routes>
       <Footer />
