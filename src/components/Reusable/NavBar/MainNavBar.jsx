@@ -188,7 +188,7 @@ const DesktopContainer = ({ children, activeSection }) => {
                 <Segment
                   style={{
                     display:
-                      pathname === "/" || pathname === "/bz-test-app"
+                      pathname === "/" || pathname === "/bz-test-app/"
                         ? "flex"
                         : "none",
                     justifyContent: "center",
@@ -209,7 +209,7 @@ const DesktopContainer = ({ children, activeSection }) => {
               <Menu
                 style={{
                   display:
-                    pathname === "/" || pathname === "/bz-test-app"
+                    pathname === "/" || pathname === "/bz-test-app/"
                       ? "flex"
                       : "none",
                   border: "none",
