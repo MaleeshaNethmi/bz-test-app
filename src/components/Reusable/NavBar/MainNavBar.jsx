@@ -124,7 +124,7 @@ const DesktopContainer = ({ children, activeSection }) => {
                   fontFamily: "Edo",
                   fontSize: "2em",
                 }}
-                href="/"
+                href="/bz-test-app"
               >
                 Bug Zero
               </Menu.Item>
@@ -187,7 +187,10 @@ const DesktopContainer = ({ children, activeSection }) => {
               {!isScrolled && windowHeight >= 830 && (
                 <Segment
                   style={{
-                    display: pathname === "/" ? "flex" : "none",
+                    display:
+                      pathname === "/" || pathname === "/bz-test-app"
+                        ? "flex"
+                        : "none",
                     justifyContent: "center",
                     color: "#f4c700",
                     fontFamily: "Edo",
@@ -205,7 +208,10 @@ const DesktopContainer = ({ children, activeSection }) => {
 
               <Menu
                 style={{
-                  display: pathname === "/" ? "flex" : "none",
+                  display:
+                    pathname === "/" || pathname === "/bz-test-app"
+                      ? "flex"
+                      : "none",
                   border: "none",
                   // display: "flex",
                   justifyContent: "center",
