@@ -111,7 +111,7 @@ const DesktopContainer = ({ children, activeSection }) => {
                   key={index}
                   as="a"
                   style={{ color: "White" }}
-                  href={`${process.env.PUBLIC_URL}/#${item.name}`}
+                  href={`/#/${item.name}`}
                 >
                   {item.label}
                 </Menu.Item>
@@ -127,7 +127,7 @@ const DesktopContainer = ({ children, activeSection }) => {
                     color: "#212121",
                     backgroundColor: "#f4c700",
                   }}
-                  href={`${process.env.PUBLIC_URL}/signin`}
+                  href={`#/signin`}
                 >
                   {/* <a href="http://localhost:3000/bz-test-app/signin"></a> */}
                   Sign In
@@ -138,7 +138,7 @@ const DesktopContainer = ({ children, activeSection }) => {
                   color="yellow"
                   style={{ marginLeft: "0.5em", borderRadius: "25px" }}
                   basic
-                  href={`${process.env.PUBLIC_URL}/joinwithus`}
+                  href={`#/joinwithus`}
                 >
                   Sign Up
                 </Button>
@@ -206,7 +206,7 @@ const DesktopContainer = ({ children, activeSection }) => {
                     active={activeItem === item.name}
                     onClick={handleItemClick}
                     as="a"
-                    href={`${process.env.PUBLIC_URL}/#${item.name}`}
+                    href={`#/${item.name}`}
                   >
                     {item.label}
                   </Menu.Item>
@@ -265,7 +265,7 @@ const MobileContainer = ({ children, activeSection }) => {
                   name={item.name}
                   as="a"
                   style={{ color: "#F8F8F8" }}
-                  href={`${process.env.PUBLIC_URL}/#${item.name}`}
+                  href={`#/${item.name}`}
                 >
                   {item.label}
                 </Menu.Item>
@@ -283,7 +283,7 @@ const MobileContainer = ({ children, activeSection }) => {
               key={index}
               as="a"
               style={{ color: "White" }}
-              href={`${process.env.PUBLIC_URL}/#${item.name}`}
+              href={`#/${item.name}`}
             >
               {item.label}
             </Menu.Item>
