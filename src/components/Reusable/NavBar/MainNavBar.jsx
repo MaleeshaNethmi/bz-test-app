@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
 import { createMedia } from "@artsy/fresnel";
 import { InView } from "react-intersection-observer";
@@ -35,10 +35,35 @@ const DesktopContainer = ({ children, activeSection }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [windowHeight, setWindowHeight] = useState(window.innerHeight);
 
-  const handleItemClick = (e, { name }) => setActiveItem(name);
-
   const location = useLocation();
   const { pathname } = location;
+
+  const navigate = useNavigate();
+  const handleNavClick = (section) => {
+    if (location.pathname === "/") {
+      scrollToSection(section);
+    } else {
+      localStorage.setItem("scrollToSection", section);
+      navigate("/");
+    }
+  };
+
+  useEffect(() => {
+    const sectionId = localStorage.getItem("scrollToSection");
+    if (sectionId && location.pathname === "/") {
+      localStorage.removeItem("scrollToSection");
+      setTimeout(() => {
+        scrollToSection(sectionId);
+      }, 500);
+    }
+  }, [location]);
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   useEffect(() => {
     setActiveItem(activeSection);
@@ -111,7 +136,7 @@ const DesktopContainer = ({ children, activeSection }) => {
                   key={index}
                   as="a"
                   style={{ color: "White" }}
-                  href={`/#/${item.name}`}
+                  href={`#/${item.name}`}
                 >
                   {item.label}
                 </Menu.Item>
@@ -161,11 +186,7 @@ const DesktopContainer = ({ children, activeSection }) => {
               {!isScrolled && windowHeight >= 830 && (
                 <Segment
                   style={{
-                    display:
-                      pathname === "/bz-test-app" ||
-                      pathname === "/bz-test-app/"
-                        ? "flex"
-                        : "none",
+                    display: pathname === "/" ? "flex" : "none",
                     justifyContent: "center",
                     color: "#f4c700",
                     fontFamily: "Edo",
@@ -183,12 +204,7 @@ const DesktopContainer = ({ children, activeSection }) => {
 
               <Menu
                 style={{
-                  display:
-                    pathname === "/bz-test-app"
-                      ? "flex"
-                      : pathname === "/bz-test-app/"
-                      ? "flex"
-                      : "none",
+                  display: pathname === "/" ? "flex" : "none",
                   border: "none",
                   // display: "flex",
                   justifyContent: "center",
@@ -204,9 +220,10 @@ const DesktopContainer = ({ children, activeSection }) => {
                     key={index}
                     name={item.name}
                     active={activeItem === item.name}
-                    onClick={handleItemClick}
-                    as="a"
-                    href={`#/${item.name}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleNavClick(item.name);
+                    }}
                   >
                     {item.label}
                   </Menu.Item>
@@ -227,11 +244,40 @@ DesktopContainer.propTypes = {
 };
 
 const MobileContainer = ({ children, activeSection }) => {
+  const navigate = useNavigate();
+
   const [sidebarOpened, setSidebarOpened] = useState(false);
 
   const handleToggle = () => setSidebarOpened(!sidebarOpened);
   const handleSidebarHide = () => setSidebarOpened(false);
 
+  const location = useLocation(); // Get current page
+
+  const handleNavClick = (section) => {
+    if (location.pathname === "/") {
+      scrollToSection(section);
+    } else {
+      localStorage.setItem("scrollToSection", section);
+      navigate("/");
+    }
+  };
+
+  useEffect(() => {
+    const sectionId = localStorage.getItem("scrollToSection");
+    if (sectionId && location.pathname === "/") {
+      localStorage.removeItem("scrollToSection");
+      setTimeout(() => {
+        scrollToSection(sectionId);
+      }, 500);
+    }
+  }, [location]);
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <Media at="mobile">
       <Sidebar.Pushable
@@ -262,10 +308,12 @@ const MobileContainer = ({ children, activeSection }) => {
               {menuItems.map((item, index) => (
                 <Menu.Item
                   key={index}
-                  name={item.name}
                   as="a"
                   style={{ color: "#F8F8F8" }}
-                  href={`#/${item.name}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavClick(item.name);
+                  }}
                 >
                   {item.label}
                 </Menu.Item>
@@ -282,8 +330,11 @@ const MobileContainer = ({ children, activeSection }) => {
             <Menu.Item
               key={index}
               as="a"
-              style={{ color: "White" }}
-              href={`#/${item.name}`}
+              style={{ color: "#F8F8F8" }}
+              onClick={(e) => {
+                e.preventDefault();
+                handleNavClick(item.name);
+              }}
             >
               {item.label}
             </Menu.Item>
@@ -310,13 +361,14 @@ const MobileContainer = ({ children, activeSection }) => {
                 <Icon name="sidebar" style={{ color: "white" }} />
               </Menu.Item>
               <Menu.Item position="right">
-                <Button as="a" inverted color="yellow" basic>
+                <Button as="a" inverted color="yellow" href={`#/signin`} basic>
                   Log in
                 </Button>
                 <Button
                   as="a"
                   inverted
                   color="yellow"
+                  href={`#/joinwithus`}
                   style={{ marginLeft: "0.5em" }}
                 >
                   Sign Up
