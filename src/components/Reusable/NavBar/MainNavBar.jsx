@@ -123,7 +123,7 @@ const DesktopContainer = ({ children, activeSection }) => {
                   fontFamily: "Edo",
                   fontSize: "2em",
                 }}
-                href="/bz-test-app"
+                href="/"
               >
                 Bug Zero
               </Menu.Item>
