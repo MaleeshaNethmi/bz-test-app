@@ -38,6 +38,7 @@ const DesktopContainer = ({ children, activeSection }) => {
   const location = useLocation();
   const { pathname } = location;
 
+  console.log("pathname", pathname);
   const navigate = useNavigate();
   const handleNavClick = (section) => {
     if (location.pathname === "/") {
@@ -186,7 +187,10 @@ const DesktopContainer = ({ children, activeSection }) => {
               {!isScrolled && windowHeight >= 830 && (
                 <Segment
                   style={{
-                    display: pathname === "/" ? "flex" : "none",
+                    display:
+                      pathname === "/" || pathname === "/bz-test-app"
+                        ? "flex"
+                        : "none",
                     justifyContent: "center",
                     color: "#f4c700",
                     fontFamily: "Edo",
@@ -204,7 +208,10 @@ const DesktopContainer = ({ children, activeSection }) => {
 
               <Menu
                 style={{
-                  display: pathname === "/" ? "flex" : "none",
+                  display:
+                    pathname === "/" || pathname === "/bz-test-app"
+                      ? "flex"
+                      : "none",
                   border: "none",
                   // display: "flex",
                   justifyContent: "center",
