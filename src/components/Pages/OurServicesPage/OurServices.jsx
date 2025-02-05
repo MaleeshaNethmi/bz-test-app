@@ -68,7 +68,7 @@ const CardX = (props) => {
               borderRadius: "35px",
             }}
           >
-            <a href="http://localhost:3000/bz-test-app/third">
+            <a href="#/third">
               <Icon name="right arrow" style={{ marginRight: "10px" }} />
               Learn More
             </a>

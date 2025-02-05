@@ -44,10 +44,7 @@ const BannerPage3 = () => {
                     >
                       <span style={{ marginLeft: "10px" }}>
                         {" "}
-                        <a
-                          href={`${process.env.PUBLIC_URL}/joinwithus`}
-                          style={{ color: "black" }}
-                        >
+                        <a href="#/joinwithus" style={{ color: "black" }}>
                           I'm Interested
                         </a>
                       </span>
