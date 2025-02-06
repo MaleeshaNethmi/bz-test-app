@@ -38,7 +38,6 @@ const DesktopContainer = ({ children, activeSection }) => {
   const location = useLocation();
   const { pathname } = location;
 
-  console.log("pathname", pathname);
   const navigate = useNavigate();
   const handleNavClick = (section) => {
     if (location.pathname === "/") {
