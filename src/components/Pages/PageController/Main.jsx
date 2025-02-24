@@ -6,7 +6,6 @@ import EndtoEndSupport from "../EndtoEndSupport/EndtoEndSupport";
 import Partners from "../Partners/Partners";
 import HomePage from "../BannerPage/BannerPage";
 import SecureOrganization from "../SecureOrganization/SecureOrganization";
-import Team from "../Team/Team";
 import WhyJoin from "../WhyJoin/WhyJoin";
 import EarnMoney from "../EarnMoney/EarnMoney";
 import BugZeroUnique from "../BugZeroUnique/BugZeroUnique";
@@ -75,11 +74,6 @@ const Main = () => {
       <section id="bugzerounique" className={style.darkSection}>
         <BugZeroUnique />
       </section>
-
-      <section id="the-team" className={style.darkSection}>
-        <Team />
-      </section>
-
       <section id="blog-page" className={style.darkSection}>
         <BlogPage />
       </section>
