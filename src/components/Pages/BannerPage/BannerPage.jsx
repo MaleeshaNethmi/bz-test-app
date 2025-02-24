@@ -8,6 +8,7 @@ const BannerPage = () => {
         <div className={style.text_section}>
           <h2 className={style.text_title}>
             Crowdsource your security testing in a smarter way with Bug Zero
+            test
           </h2>
           <div className={style.button_section}>
             <Button
