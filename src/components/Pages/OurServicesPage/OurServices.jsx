@@ -69,7 +69,10 @@ const CardX = (props) => {
             }}
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
-            <a href="#/third">
+            <a
+              href="#/third"
+              style={{ color: "black", textDecoration: "none" }}
+            >
               <Icon name="right arrow" style={{ marginRight: "10px" }} />
               Learn More
             </a>
