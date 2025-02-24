@@ -21,7 +21,7 @@ const BannerPage = () => {
             >
               <span style={{ marginLeft: "10px" }}>
                 {" "}
-                <a href="#/joinwithus" style={{ color: "black" }}>
+                <a href="/joinwithus" style={{ color: "black" }}>
                   Get Started
                 </a>
               </span>
