@@ -182,23 +182,8 @@ const DesktopContainer = ({ children, activeSection }) => {
                 boxShadow: "none",
               }}
             >
-              {!isScrolled && windowHeight >= 830 && (
-                <Segment
-                  style={{
-                    display: pathname === "/" ? "flex" : "none",
-                    justifyContent: "center",
-                    color: "#f4c700",
-                    fontFamily: "Edo",
-                    fontSize: "5em",
-                    margin: "0%",
-                    backgroundColor: "transparent",
-                    borderRadius: "0%",
-                    border: "none",
-                    boxShadow: "none",
-                  }}
-                >
-                  Bug Zero
-                </Segment>
+              {!isScrolled && (
+                <Segment className="bug-zero-banner">Bug Zero</Segment>
               )}
 
               <Menu
