@@ -1,5 +1,5 @@
 import style from "../BannerPage3/BannerPage3.module.css";
-import { Button, Container, Icon } from "semantic-ui-react";
+import { Button, Container } from "semantic-ui-react";
 import OfferPage from "../OfferPage/OfferPage";
 import PDPAPage from "../PDPAPage/PDPAPage";
 import OurServices from "../OurServicesPage/OurServices";
@@ -44,8 +44,10 @@ const BannerPage5 = () => {
                       }}
                     >
                       <span style={{ marginLeft: "10px" }}>
-                        {" "}
-                        <a href="#/joinwithus" style={{ color: "black" }}>
+                        <a
+                          href="mailto:privacy@bugzero.io?subject=Interest%20in%20BugZero%20Services&body=Hello,%20I%20am%20interested%20in%20your%20services.%20Please%20contact%20me%20with%20more%20details."
+                          style={{ color: "black", textDecoration: "none" }}
+                        >
                           I'm Interested
                         </a>
                       </span>

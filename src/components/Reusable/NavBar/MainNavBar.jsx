@@ -123,7 +123,7 @@ const DesktopContainer = ({ children, activeSection }) => {
                   fontFamily: "Edo",
                   fontSize: "2em",
                 }}
-                href="/bz-test-app"
+                href="#/bz-test-app"
               >
                 Bug Zero
               </Menu.Item>
@@ -154,7 +154,6 @@ const DesktopContainer = ({ children, activeSection }) => {
                   }}
                   href={`#/signin`}
                 >
-                  {/* <a href="http://localhost:3000/bz-test-app/signin"></a> */}
                   Sign In
                 </Button>
                 <Button
