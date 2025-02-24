@@ -136,7 +136,7 @@ const DesktopContainer = ({ children, activeSection }) => {
                   key={index}
                   as="a"
                   style={{ color: "White" }}
-                  href={`#/${item.name}`}
+                  href={`/${item.name}`}
                 >
                   {item.label}
                 </Menu.Item>
@@ -152,7 +152,7 @@ const DesktopContainer = ({ children, activeSection }) => {
                     color: "#212121",
                     backgroundColor: "#f4c700",
                   }}
-                  href={`#/signin`}
+                  href={`/signin`}
                 >
                   Sign In
                 </Button>
@@ -162,7 +162,7 @@ const DesktopContainer = ({ children, activeSection }) => {
                   color="yellow"
                   style={{ marginLeft: "0.5em", borderRadius: "25px" }}
                   basic
-                  href={`#/joinwithus`}
+                  href={`/joinwithus`}
                 >
                   Sign Up
                 </Button>
@@ -185,8 +185,7 @@ const DesktopContainer = ({ children, activeSection }) => {
               {!isScrolled && windowHeight >= 830 && (
                 <Segment
                   style={{
-                    display:
-                      pathname === "/" || pathname === "#/" ? "flex" : "none",
+                    display: pathname === "/" ? "flex" : "none",
                     justifyContent: "center",
                     color: "#f4c700",
                     fontFamily: "Edo",
@@ -204,8 +203,7 @@ const DesktopContainer = ({ children, activeSection }) => {
 
               <Menu
                 style={{
-                  display:
-                    pathname === "/" || pathname === "#/" ? "flex" : "none",
+                  display: pathname === "/" ? "flex" : "none",
                   border: "none",
                   // display: "flex",
                   justifyContent: "center",
@@ -369,7 +367,7 @@ const MobileContainer = ({ children, activeSection }) => {
                   as="a"
                   inverted
                   color="yellow"
-                  href={`#/joinwithus`}
+                  href={`/joinwithus`}
                   style={{ marginLeft: "0.5em" }}
                 >
                   Sign Up
