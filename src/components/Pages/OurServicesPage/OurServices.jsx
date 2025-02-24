@@ -124,7 +124,7 @@ const OurServices = () => {
             message={
               "Bug Zero connects ethical hackrs with organizations,allowing them to identify and fix system vulnerabilities."
             }
-            page={"#/third"}
+            page={"#/fourth"}
           />
           <CardX
             name={"Consultancy & Triaging"}
@@ -138,7 +138,7 @@ const OurServices = () => {
             message={
               "Equip teams with essential skills and knowledge to defend against evolving threats and maintain robust security "
             }
-            page={"#/fourth"}
+            page={"#/third"}
           />
         </CardGroup>
       </div>
