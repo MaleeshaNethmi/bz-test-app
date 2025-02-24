@@ -123,7 +123,7 @@ const DesktopContainer = ({ children, activeSection }) => {
                   fontFamily: "Edo",
                   fontSize: "2em",
                 }}
-                href="#/bz-test-app"
+                href="/"
               >
                 Bug Zero
               </Menu.Item>
@@ -186,11 +186,7 @@ const DesktopContainer = ({ children, activeSection }) => {
                 <Segment
                   style={{
                     display:
-                      pathname === "/" ||
-                      pathname === "#/" ||
-                      pathname === "#/bz-test-app"
-                        ? "flex"
-                        : "none",
+                      pathname === "/" || pathname === "#/" ? "flex" : "none",
                     justifyContent: "center",
                     color: "#f4c700",
                     fontFamily: "Edo",
@@ -209,11 +205,7 @@ const DesktopContainer = ({ children, activeSection }) => {
               <Menu
                 style={{
                   display:
-                    pathname === "/" ||
-                    pathname === "#/" ||
-                    pathname === "#/bz-test-app"
-                      ? "flex"
-                      : "none",
+                    pathname === "/" || pathname === "#/" ? "flex" : "none",
                   border: "none",
                   // display: "flex",
                   justifyContent: "center",
@@ -332,7 +324,7 @@ const MobileContainer = ({ children, activeSection }) => {
           )}
 
           {[
-            { name: "blog-page", label: "Blog" },
+            { name: "", label: "Blog" },
             { name: "", label: "ZeroFeed" },
             { name: "", label: "Programs" },
           ].map((item, index) => (
