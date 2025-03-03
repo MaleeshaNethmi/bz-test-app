@@ -50,7 +50,7 @@ const SignIn = () => (
           >
             Sign In
           </Button>
-          <br /> New to Bug Zero? <a href="#/joinwithus">Create an account</a>
+          <br /> New to Bug Zero? <a href="/joinwithus">Create an account</a>
         </Segment>
       </Form>
     </Grid.Column>

@@ -77,7 +77,7 @@ const JoinwithUs = () => {
         </Card>
       </div>
       <div style={{ marginBottom: "145px", marginTop: "20px" }}>
-        Already have an account? <a href="#/signin">Sign In</a>
+        Already have an account? <a href="/signin">Sign In</a>
       </div>
     </div>
   );
