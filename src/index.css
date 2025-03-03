@@ -194,3 +194,22 @@ code {
 .learnmorebtn:hover {
   color: #212121 !important;
 }
+
+.bug-zero-banner {
+  display: none;
+}
+
+@media (min-height: 830px) {
+  .bug-zero-banner {
+    display: flex;
+    justify-content: center;
+    color: #f4c700;
+    font-family: "Edo";
+    font-size: 5em !important;
+    margin: 0%;
+    background-color: transparent !important;
+    border-radius: 0%;
+    border: none;
+    box-shadow: none;
+  }
+}

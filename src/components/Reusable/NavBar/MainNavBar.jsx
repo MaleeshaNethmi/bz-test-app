@@ -136,7 +136,7 @@ const DesktopContainer = ({ children, activeSection }) => {
                   key={index}
                   as="a"
                   style={{ color: "White" }}
-                  href={`#/${item.name}`}
+                  href={`/${item.name}`}
                 >
                   {item.label}
                 </Menu.Item>
@@ -152,7 +152,7 @@ const DesktopContainer = ({ children, activeSection }) => {
                     color: "#212121",
                     backgroundColor: "#f4c700",
                   }}
-                  href={`#/signin`}
+                  href={`/signin`}
                 >
                   Sign In
                 </Button>
@@ -162,7 +162,7 @@ const DesktopContainer = ({ children, activeSection }) => {
                   color="yellow"
                   style={{ marginLeft: "0.5em", borderRadius: "25px" }}
                   basic
-                  href={`#/joinwithus`}
+                  href={`/joinwithus`}
                 >
                   Sign Up
                 </Button>
@@ -182,30 +182,13 @@ const DesktopContainer = ({ children, activeSection }) => {
                 boxShadow: "none",
               }}
             >
-              {!isScrolled && windowHeight >= 830 && (
-                <Segment
-                  style={{
-                    display:
-                      pathname === "/" || pathname === "#/" ? "flex" : "none",
-                    justifyContent: "center",
-                    color: "#f4c700",
-                    fontFamily: "Edo",
-                    fontSize: "5em",
-                    margin: "0%",
-                    backgroundColor: "transparent",
-                    borderRadius: "0%",
-                    border: "none",
-                    boxShadow: "none",
-                  }}
-                >
-                  Bug Zero
-                </Segment>
+              {!isScrolled && (
+                <Segment className="bug-zero-banner">Bug Zero</Segment>
               )}
 
               <Menu
                 style={{
-                  display:
-                    pathname === "/" || pathname === "#/" ? "flex" : "none",
+                  display: pathname === "/" ? "flex" : "none",
                   border: "none",
                   // display: "flex",
                   justifyContent: "center",
@@ -362,14 +345,14 @@ const MobileContainer = ({ children, activeSection }) => {
                 <Icon name="sidebar" style={{ color: "white" }} />
               </Menu.Item>
               <Menu.Item position="right">
-                <Button as="a" inverted color="yellow" href={`#/signin`} basic>
+                <Button as="a" inverted color="yellow" href={`/signin`} basic>
                   Log in
                 </Button>
                 <Button
                   as="a"
                   inverted
                   color="yellow"
-                  href={`#/joinwithus`}
+                  href={`/joinwithus`}
                   style={{ marginLeft: "0.5em" }}
                 >
                   Sign Up

@@ -131,14 +131,14 @@ const OurServices = () => {
             message={
               "Patner with security experts to assess vulnerabilities, prioritize risks,and streamline the resolution process effectively."
             }
-            page={"#/third"}
+            page={"/third"}
           />
           <CardX
             name={"Cybersecurity Training"}
             message={
               "Equip teams with essential skills and knowledge to defend against evolving threats and maintain robust security "
             }
-            page={"#/fifth"}
+            page={"/fifth"}
           />
         </CardGroup>
       </div>
