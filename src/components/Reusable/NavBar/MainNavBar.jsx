@@ -182,7 +182,7 @@ const DesktopContainer = ({ children, activeSection }) => {
                 boxShadow: "none",
               }}
             >
-              {!isScrolled && (
+              {!isScrolled && pathname === "/" && (
                 <Segment className="bug-zero-banner">Bug Zero</Segment>
               )}
 
