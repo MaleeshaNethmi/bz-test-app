@@ -33,10 +33,10 @@ const BannerPage = () => {
               style={{ borderRadius: "25px" }}
               className={style.learnmorebtn}
               inverted
+              as="a"
+              href="https://blog.bugzero.io/bug-bounties-in-sri-lanka-650f34bd162e"
             >
-              <a href="https://blog.bugzero.io/bug-bounties-in-sri-lanka-650f34bd162e">
-                <span className={style.learnmorebtn}>Learn More</span>
-              </a>
+              <span>Learn More</span>
             </Button>
           </div>
         </div>
