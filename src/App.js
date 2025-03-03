@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomepageLayout from "./components/Pages/PageController/Main";
 import Footer from "./components/Reusable/Footer/Footer";
 import NavBar from "./components/Reusable/NavBar/MainNavBar";
@@ -13,7 +13,7 @@ import BannerPage5 from "./components/Pages/BannerPage5/BannerPage5";
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <NavBar />
       <Routes>
         <Route path="/" element={<HomepageLayout />} />
@@ -26,7 +26,7 @@ function App() {
         <Route path="/*" element={<NotFoundPAge />} />
       </Routes>
       <Footer />
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

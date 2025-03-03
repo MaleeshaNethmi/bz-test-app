@@ -345,7 +345,7 @@ const MobileContainer = ({ children, activeSection }) => {
                 <Icon name="sidebar" style={{ color: "white" }} />
               </Menu.Item>
               <Menu.Item position="right">
-                <Button as="a" inverted color="yellow" href={`#/signin`} basic>
+                <Button as="a" inverted color="yellow" href={`/signin`} basic>
                   Log in
                 </Button>
                 <Button
