@@ -38,7 +38,7 @@ const GetStartedPage = () => {
               >
                 <span style={{ marginLeft: "10px" }}>
                   {" "}
-                  <a href="#/joinwithus" style={{ color: "black" }}>
+                  <a href="/joinwithus" style={{ color: "black" }}>
                     Join with us
                   </a>
                 </span>

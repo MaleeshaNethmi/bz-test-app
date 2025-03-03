@@ -12,8 +12,6 @@ import BugZeroUnique from "../BugZeroUnique/BugZeroUnique";
 import BlogPage from "../BlogPage/BlogPage";
 import GetStartedPage from "../GetStartedPage/GetStartedPage";
 import style from "./Main.module.css";
-import BannerPage2 from "../BannerPage2/BannerPage2";
-import BannerPage from "../BannerPage/BannerPage";
 
 const Main = () => {
   const [goUp, setGoUp] = useState(false);
