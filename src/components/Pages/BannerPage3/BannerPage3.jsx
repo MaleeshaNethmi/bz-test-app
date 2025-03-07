@@ -24,7 +24,7 @@ const BannerPage3 = () => {
                       stylepadding: ((5 % 0) % 5) % 0,
                       color: " #f4c700 ",
                       fontFamily: "poppins,sans-serif",
-                      fontSize: "90px",
+                      fontSize: "40px",
                       fontWeight: "bold",
                     }}
                   >

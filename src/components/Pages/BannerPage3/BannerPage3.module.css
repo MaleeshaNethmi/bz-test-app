@@ -79,10 +79,13 @@ h2 {
 @media (max-width: 768px) {
   h2 {
     font-size: 24px;
-    padding: 10px 15px;
+    padding: 50px 100px;
   }
 
   .text_title {
     font-size: 30px;
+  }
+  h1 {
+    font-size: 5px;
   }
 }
