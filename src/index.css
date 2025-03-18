@@ -203,7 +203,7 @@ code {
   .bug-zero-banner {
     display: flex;
     justify-content: center;
-    color: #f4c700;
+    color: white;
     font-family: "Edo";
     font-size: 5em !important;
     margin: 0%;
