@@ -12,11 +12,10 @@ const BannerPage = () => {
           <div className={style.button_section}>
             <Button
               size="huge"
-              color="yellow"
+              color="white"
               style={{
                 color: "Black",
                 borderRadius: "25px",
-                backgroundColor: "#f4c700",
               }}
             >
               <span style={{ marginLeft: "10px" }}>
@@ -29,7 +28,7 @@ const BannerPage = () => {
             </Button>
             <Button
               size="huge"
-              color="yellow"
+              color="white"
               style={{ borderRadius: "25px" }}
               className={style.learnmorebtn}
               inverted

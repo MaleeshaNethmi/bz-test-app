@@ -70,7 +70,7 @@ const SecureOrganization = () => {
 
       <Container style={{ marginTop: "2rem", padding: "2rem" }}>
         <button
-          className="big ui yellow button"
+          className="big ui white button"
           style={{ color: "black", fontSize: "20px", borderRadius: "25px" }}
           size="huge"
         >

@@ -119,7 +119,7 @@ const DesktopContainer = ({ children, activeSection }) => {
               <Menu.Item
                 as="a"
                 style={{
-                  color: "#f4c700",
+                  color: "white",
                   fontFamily: "Edo",
                   fontSize: "2em",
                 }}
@@ -150,7 +150,7 @@ const DesktopContainer = ({ children, activeSection }) => {
                     borderRadius: "25px",
                     border: "none",
                     color: "#212121",
-                    backgroundColor: "#f4c700",
+                    backgroundColor: "white",
                   }}
                   href={`/signin`}
                 >
