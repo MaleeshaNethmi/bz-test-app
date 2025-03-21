@@ -33,7 +33,7 @@ const EarnMoney = () => {
   return (
     <Segment style={{ padding: "6em 0em", border: "none" }} vertical>
       <Container text>
-        <Header as="h3" style={{ fontSize: "2.5em", color: "#f4c700" }}>
+        <Header as="h3" style={{ fontSize: "2.5em", color: "white" }}>
           Earn Money By Doing What You Love!
         </Header>
         <p

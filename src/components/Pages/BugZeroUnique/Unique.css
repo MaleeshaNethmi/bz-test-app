@@ -39,9 +39,9 @@
 }
 
 .step {
-  border: 1.5px solid #f4c700 !important;
-  background-color: #f4c7002a !important;
-  background: linear-gradient(120deg, #0f0f092a, #5a4c10) !important;
+  border: 1.5px solid #0e0d0d !important;
+  background-color: #f3efde !important;
+  background: linear-gradient(120deg, #f3efde, #f3efde) !important;
   background-size: 200% 100% !important;
   background-position: 100% 0 !important;
   transition: background-position 0.5s !important;
@@ -55,7 +55,7 @@
 .step:hover {
   background-position: 0 0 !important;
 
-  box-shadow: 0 0px 2px 0 #f4c70050, 0 0px 16px 0 #f4c70050 !important;
+  box-shadow: 0 0px 2px 0 #f3efde, 0 0px 16px 0 #f3efde !important;
 }
 
 .step .title {

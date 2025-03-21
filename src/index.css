@@ -63,7 +63,7 @@ code {
 @keyframes zoomup {
   0%,
   100% {
-    color: #f4c700;
+    color: #f3efde;
     /* filter: blur(0.5px); */
     text-shadow: 0 0 2px #fff;
   }
@@ -82,12 +82,12 @@ code {
 }
 
 .glow:hover {
-  text-shadow: 0 0 4px #f4c700;
+  text-shadow: 0 0 4px #f3efde;
 }
 
 /* ------------------gemini  */
 .gemini {
-  background: radial-gradient(circle, #212121, #f4c700);
+  background: radial-gradient(circle, #212121, #f3efde);
   background-clip: text;
   color: transparent;
   animation: gemini 5s linear infinite;
@@ -108,7 +108,7 @@ code {
 }
 
 .stats-card {
-  background-color: #f4c700 !important;
+  background-color: white !important;
   color: white !important;
   text-align: center !important;
   padding: 2em !important;
@@ -116,7 +116,7 @@ code {
   box-shadow: none !important;
   margin-bottom: 1rem !important;
 
-  background: linear-gradient(90deg, #ffd311, #f4c700, #c7a200) !important;
+  background: linear-gradient(90deg, #080808, #f3efde, #f3efde) !important;
   background-size: 200% 100% !important;
   background-position: 100% 0 !important;
   transition: background-position 0.5s !important;
@@ -163,7 +163,7 @@ code {
 }
 
 .clipArt:hover {
-  box-shadow: 0 0px 2px 0 #f4c70050, 0 0px 16px 0 #f4c70050;
+  box-shadow: 0 0px 2px 0 #f3efde, 0 0px 16px 0 #f3efde;
 }
 
 /* landing page zoom in and out */
