@@ -22,7 +22,7 @@ const BannerPage3 = () => {
                   <h1
                     style={{
                       stylepadding: ((5 % 0) % 5) % 0,
-                      color: " #f4c700 ",
+                      color: " white",
                       fontFamily: "poppins,sans-serif",
                       fontSize: "40px",
                       fontWeight: "bold",
@@ -34,11 +34,11 @@ const BannerPage3 = () => {
                   <div className={style.button_section}>
                     <Button
                       size="huge"
-                      color=" #f4c700 "
+                      color="white "
                       style={{
                         color: "Black",
                         borderRadius: "25px",
-                        backgroundColor: "#f4c700",
+                        backgroundColor: "white",
                         marginTop: "60px",
                       }}
                     >

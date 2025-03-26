@@ -11,7 +11,7 @@ const PDPAPage = () => {
       <h1
         style={{
           marginBottom: "60px",
-          color: "  #f4c700 ",
+          color: "white ",
           fontSize: "40px",
         }}
       >

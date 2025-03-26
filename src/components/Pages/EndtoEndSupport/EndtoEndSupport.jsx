@@ -54,7 +54,7 @@ const EndtoEndSupport = () => {
       }}
     >
       <Container text>
-        <Header as="h3" style={{ fontSize: "2.5em", color: "#f4c700" }}>
+        <Header as="h3" style={{ fontSize: "2.5em", color: "white" }}>
           Providing end to end support to every bug bounty program
         </Header>
         <br />

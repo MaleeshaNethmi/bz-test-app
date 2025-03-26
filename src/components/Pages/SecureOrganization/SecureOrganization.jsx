@@ -38,7 +38,7 @@ const SecureOrganization = () => {
   return (
     <Segment style={{ padding: "6em 0em", border: "none" }} vertical>
       <Container text>
-        <Header style={{ fontSize: "2.5em", color: "#f4c700" }}>
+        <Header style={{ fontSize: "2.5em", color: "white" }}>
           Secure your organization 24/7
         </Header>
         <p className="mb-4" style={{ fontSize: "1.33em", color: "white" }}>

@@ -20,7 +20,7 @@ const BannerPage2 = () => {
                 <h1
                   style={{
                     stylepadding: ((5 % 0) % 5) % 0,
-                    color: " #f4c700 ",
+                    color: " white ",
                     fontFamily: "poppins,sans-serif",
                     fontSize: "90px",
                     fontWeight: "bold",
@@ -36,7 +36,7 @@ const BannerPage2 = () => {
                     style={{
                       color: "Black",
                       borderRadius: "25px",
-                      backgroundColor: "#f4c700",
+                      backgroundColor: "white",
                       marginTop: "60px",
                     }}
                   >

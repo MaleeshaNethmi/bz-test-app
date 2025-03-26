@@ -11,7 +11,7 @@ const Partners = () => {
   return (
     <Segment style={{ padding: "6em 0em", border: "none" }} vertical>
       <Container>
-        <Header as="h3" style={{ fontSize: "2.5em", color: "#f4c700" }}>
+        <Header as="h3" style={{ fontSize: "2.5em", color: "white" }}>
           Protecting Sri Lanka's Most Valuable Platforms
         </Header>
         <br />

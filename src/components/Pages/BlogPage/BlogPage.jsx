@@ -114,7 +114,7 @@ const BlogPage = () => {
                 <Icon name="at" />
                 <input />
               </Input>
-              <Button color="yellow" className={styles.button}>
+              <Button color="black" className={styles.button}>
                 Subscribe
               </Button>
             </Segment>

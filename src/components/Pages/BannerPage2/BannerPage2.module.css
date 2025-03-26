@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   gap: 24px;
-  background: linear-gradient(50deg, #f4c700, #212121, #212121, #f4c700);
+  background: linear-gradient(50deg, #f3efde, #212121, #212121, #f3efde);
   background-size: 400% 400%;
   /* Uncomment the next line to enable gradient animation */
   animation: gradient 15s ease infinite;
