@@ -10,10 +10,10 @@ const Step = ({ img, title, desc }) => (
       <div className="step" style={{ padding: "2em" }}>
         <Image src={img} alt="BigCo Inc. logo" size="tiny" />
         <div className="content">
-          <div className="title" style={{ color: "white" }}>
+          <div className="title" style={{ color: "black" }}>
             {title}
           </div>
-          <div className="description" style={{ color: "white" }}>
+          <div className="description" style={{ color: "black" }}>
             {desc}
           </div>
         </div>

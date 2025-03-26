@@ -23,7 +23,7 @@ const CardX = (props) => {
         width: "410px",
         backgroundColor: "#212121",
         margin: "15px 50px",
-        border: "2.5px solid #f4c700",
+        border: "2.5px solid white",
         borderRadius: "15px",
       }}
     >
@@ -38,7 +38,7 @@ const CardX = (props) => {
           style={{
             whiteSpace: "pre-line",
             marginTop: "5px",
-            color: "#f4c700 ",
+            color: "white",
             fontSize: "40px",
             textAlign: "left",
           }}
@@ -64,7 +64,7 @@ const CardX = (props) => {
           <Button
             size="huge"
             style={{
-              backgroundColor: " #f4c700 ",
+              backgroundColor: "white ",
               borderRadius: "35px",
             }}
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -108,7 +108,7 @@ const OurServices = () => {
         <h1
           style={{
             marginBottom: "25px",
-            color: "  #f4c700 ",
+            color: "  white ",
             fontSize: "40px",
           }}
         >

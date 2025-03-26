@@ -16,10 +16,10 @@ const Step = ({ img, title, desc }) => (
       <div className="step" style={{ padding: "2em" }}>
         <Image src={img} alt="BigCo Inc. logo" size="tiny" />
         <div className="content">
-          <div className="title" style={{ color: "white" }}>
+          <div className="title" style={{ color: "black" }}>
             {title}
           </div>
-          <div className="description" style={{ color: "white" }}>
+          <div className="description" style={{ color: "black" }}>
             {desc}
           </div>
         </div>
@@ -34,7 +34,7 @@ const BugZeroUnique = () => {
   return (
     <div style={{ padding: "6em 0em", border: "none:" }}>
       <Container text>
-        <Header as="h3" style={{ fontSize: "2.5em", color: "#f4c700" }}>
+        <Header as="h3" style={{ fontSize: "2.5em", color: "white" }}>
           What Makes Bug Zero Unique?
         </Header>
         <br></br>

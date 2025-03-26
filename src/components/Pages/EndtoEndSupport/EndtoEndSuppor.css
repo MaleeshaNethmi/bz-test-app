@@ -3,8 +3,8 @@
 }
 
 #RFS-StepButton {
-  background-color: #f4c700;
-  box-shadow: 0 0 50px #f4c700;
+  background-color: white;
+  box-shadow: 0 0 50px white;
   position: relative;
   overflow: hidden;
 }
@@ -16,13 +16,13 @@
 
 .step_num {
   color: #000;
-  background-color: #f4c700c1;
+  background-color: white;
   padding: 3% 5%;
   border-radius: 100%;
 }
 
 #RFS-Connector {
-  border-color: #f4c700;
+  border-color: white;
 }
 
 #RFS-StepButton::before {

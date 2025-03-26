@@ -29,16 +29,16 @@ const GetStartedPage = () => {
             >
               <Button
                 size="huge"
-                color="yellow"
+                color="black"
                 style={{
-                  color: "Black",
+                  color: "white",
                   margin: "0% 2% 5% 0%",
                   borderRadius: "25px",
                 }}
               >
                 <span style={{ marginLeft: "10px" }}>
                   {" "}
-                  <a href="/joinwithus" style={{ color: "black" }}>
+                  <a href="/joinwithus" style={{ color: "white" }}>
                     Join with us
                   </a>
                 </span>
@@ -46,11 +46,11 @@ const GetStartedPage = () => {
               </Button>
               <Button
                 size="huge"
-                color="yellow"
+                color="black"
                 style={{
                   borderRadius: "25px",
-                  color: "#212121",
-                  backgroundColor: "#f4c700",
+                  color: "white",
+                  backgroundColor: "black",
                 }}
                 inverted
               >

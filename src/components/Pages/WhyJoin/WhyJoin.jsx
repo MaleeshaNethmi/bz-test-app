@@ -4,7 +4,7 @@ const WhyJoin = () => {
   return (
     <Segment style={{ padding: "6em 0em", border: "none" }} vertical>
       <Container text>
-        <Header as="h2" style={{ fontSize: "2.5em", color: "#f4c700" }}>
+        <Header as="h2" style={{ fontSize: "2.5em", color: "white" }}>
           Why Join <span>Bug Zero</span>
         </Header>
         <p style={{ fontSize: "1.33em", color: "white" }}>
