@@ -2,7 +2,7 @@
   position: fixed;
   bottom: 2rem;
   right: 2rem;
-  background-color: #f4c700;
+  background-color: #ffffff;
   color: #212121;
   padding: 0.5rem 1rem;
   border-radius: 50%;
@@ -11,6 +11,12 @@
   opacity: 0;
   transform: translateY(100%);
   z-index: 20;
+  border: 1px solid #212121;
+}
+
+.scroll_up:hover {
+  border-color: #d3d3d3;
+  background-color: #eeeeee;
 }
 
 .scroll_up.show_scroll {
