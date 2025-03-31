@@ -24,7 +24,7 @@ const Step = ({ num, title }) => (
               textAlign: "center",
               lineHeight: "22px",
               fontSize: "1em",
-              color: "#fff",
+              color: "black",
             }}
           >
             {title}
