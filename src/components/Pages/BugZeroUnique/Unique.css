@@ -40,8 +40,7 @@
 
 .step {
   border: 1.5px solid #0e0d0d !important;
-  background-color: #f3efde !important;
-  background: linear-gradient(120deg, #f3efde, #f3efde) !important;
+  background-color: #ffffff !important;
   background-size: 200% 100% !important;
   background-position: 100% 0 !important;
   transition: background-position 0.5s !important;
@@ -52,11 +51,13 @@
   transition: transform 0.3s ease;
 }
 
+
 .step:hover {
   background-position: 0 0 !important;
 
   /* box-shadow: 0 0px 2px 0 #f3efde, 0 0px 16px 0 #f3efde !important; */
 }
+
 
 .step .title {
   font-size: 20.5px !important;
