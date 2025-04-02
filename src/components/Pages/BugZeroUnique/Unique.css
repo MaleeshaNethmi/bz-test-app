@@ -51,6 +51,14 @@
   transition: transform 0.3s ease;
 }
 
+
+.step:hover {
+  background-position: 0 0 !important;
+
+  /* box-shadow: 0 0px 2px 0 #f3efde, 0 0px 16px 0 #f3efde !important; */
+}
+
+
 .step .title {
   font-size: 20.5px !important;
   line-height: 23px;
