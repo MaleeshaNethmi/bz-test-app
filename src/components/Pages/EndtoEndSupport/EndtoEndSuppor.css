@@ -4,7 +4,7 @@
 
 #RFS-StepButton {
   background-color: white;
-  box-shadow: 0 0 50px white;
+  /* box-shadow: 0 0 50px white; */
   position: relative;
   overflow: hidden;
 }
