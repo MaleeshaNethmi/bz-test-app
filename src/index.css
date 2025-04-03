@@ -108,15 +108,12 @@ code {
 }
 
 .stats-card {
-  background-color: white !important;
-  color: white !important;
+  background-color: #212121 !important;
   text-align: center !important;
   padding: 2em !important;
   border: none !important;
   box-shadow: none !important;
   margin-bottom: 1rem !important;
-
-  background: linear-gradient(90deg, #080808, #f3efde, #f3efde) !important;
   background-size: 200% 100% !important;
   background-position: 100% 0 !important;
   transition: background-position 0.5s !important;
@@ -126,12 +123,12 @@ code {
   font-size: 2rem !important;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: black !important;
+  color: white !important;
 }
 
 .stats-card .description {
   font-size: 1.3rem;
-  color: black !important;
+  color: white !important;
 }
 
 #grey {
@@ -184,9 +181,9 @@ code {
   }
 }
 
-.stats-card:hover {
+/* .stats-card:hover {
   background-position: 0 0 !important;
-}
+} */
 
 .learnmorebtn {
   color: #fff !important;
