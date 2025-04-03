@@ -160,7 +160,8 @@ code {
 }
 
 .clipArt:hover {
-  box-shadow: 0 0px 2px 0 #f3efde, 0 0px 16px 0 #f3efde;
+  box-shadow: 0 0px 2px 0 #f3efde;
+  /* 0 0px 2px 0 #f3efde, 0 0px 16px 0 #f3efde; */
 }
 
 /* landing page zoom in and out */
