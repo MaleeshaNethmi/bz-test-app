@@ -41,7 +41,7 @@ const EndtoEndSupport = () => {
   const steps = [
     "Define policy Scope and Rewards",
     "Define Right Tester",
-    "Validate and prioratize vulnalabilities",
+    "Validate and prioritize vulnerabilities",
     "Verify and Intergrate",
   ];
 

@@ -104,7 +104,7 @@ const DesktopContainer = ({ children, activeSection }) => {
             width: "100%",
             backgroundColor: "transparent",
             zIndex: "10",
-            boxShadow: "none",
+            boxShadow: "0",
           }}
         >
           <Menu
@@ -144,7 +144,6 @@ const DesktopContainer = ({ children, activeSection }) => {
               <Menu.Item position="right">
                 <Button
                   as="a"
-                  color="yellow"
                   inverted
                   style={{
                     borderRadius: "25px",
@@ -159,7 +158,6 @@ const DesktopContainer = ({ children, activeSection }) => {
                 <Button
                   as="a"
                   inverted
-                  color="yellow"
                   style={{ marginLeft: "0.5em", borderRadius: "25px" }}
                   basic
                   href={`/joinwithus`}
@@ -345,13 +343,12 @@ const MobileContainer = ({ children, activeSection }) => {
                 <Icon name="sidebar" style={{ color: "white" }} />
               </Menu.Item>
               <Menu.Item position="right">
-                <Button as="a" inverted color="yellow" href={`/signin`} basic>
+                <Button as="a" inverted href={`/signin`} basic>
                   Log in
                 </Button>
                 <Button
                   as="a"
                   inverted
-                  color="yellow"
                   href={`/joinwithus`}
                   style={{ marginLeft: "0.5em" }}
                 >
