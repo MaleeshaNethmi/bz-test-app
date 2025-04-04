@@ -46,13 +46,11 @@ const GetStartedPage = () => {
               </Button>
               <Button
                 size="huge"
-                color="black"
                 style={{
                   borderRadius: "25px",
                   color: "white",
                   backgroundColor: "black",
                 }}
-                inverted
               >
                 Contact Us
               </Button>
