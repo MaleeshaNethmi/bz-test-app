@@ -64,8 +64,8 @@ const Footer = () => (
             />
             <Button
               circular
-              color="twitter"
-              icon="twitter"
+              color="black"
+              icon="x"
               href="https://x.com/BugZero_io"
               target="_blank"
             />

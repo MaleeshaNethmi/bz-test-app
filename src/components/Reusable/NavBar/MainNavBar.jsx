@@ -144,7 +144,6 @@ const DesktopContainer = ({ children, activeSection }) => {
               <Menu.Item position="right">
                 <Button
                   as="a"
-                  color="yellow"
                   inverted
                   style={{
                     borderRadius: "25px",
@@ -159,7 +158,6 @@ const DesktopContainer = ({ children, activeSection }) => {
                 <Button
                   as="a"
                   inverted
-                  color="yellow"
                   style={{ marginLeft: "0.5em", borderRadius: "25px" }}
                   basic
                   href={`/joinwithus`}
