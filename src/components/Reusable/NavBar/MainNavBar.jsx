@@ -104,7 +104,7 @@ const DesktopContainer = ({ children, activeSection }) => {
             width: "100%",
             backgroundColor: "transparent",
             zIndex: "10",
-            boxShadow: "none",
+            boxShadow: "0",
           }}
         >
           <Menu
