@@ -7,6 +7,8 @@ import {
   Segment,
   Button,
 } from "semantic-ui-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBluesky } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => (
   <Segment inverted vertical style={{ padding: "5em 0em" }}>
@@ -83,6 +85,13 @@ const Footer = () => (
               href="https://www.youtube.com/@bugzero"
               target="_blank"
             />
+            <Button
+              circular
+              href="https://bsky.app/profile/bugzero.bsky.social"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faBluesky} />
+            </Button>
           </Grid.Column>
         </Grid.Row>
       </Grid>

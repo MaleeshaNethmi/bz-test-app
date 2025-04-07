@@ -104,7 +104,7 @@ const DesktopContainer = ({ children, activeSection }) => {
             width: "100%",
             backgroundColor: "transparent",
             zIndex: "10",
-            boxShadow: "0",
+            boxShadow: "none",
           }}
         >
           <Menu
@@ -181,7 +181,12 @@ const DesktopContainer = ({ children, activeSection }) => {
               }}
             >
               {!isScrolled && pathname === "/" && (
-                <Segment className="bug-zero-banner">Bug Zero</Segment>
+                <Segment
+                  style={{ border: "none", boxShadow: "none" }}
+                  className="bug-zero-banner"
+                >
+                  Bug Zero
+                </Segment>
               )}
 
               <Menu
