@@ -61,6 +61,7 @@ const Footer = () => (
               circular
               color="facebook"
               icon="facebook"
+              style={{ width: 40, height: 40 }}
               href="https://www.facebook.com/bugzero.io/"
               target="_blank"
             />
@@ -68,6 +69,7 @@ const Footer = () => (
               circular
               color="black"
               icon="x"
+              style={{ width: 40, height: 40 }}
               href="https://x.com/BugZero_io"
               target="_blank"
             />
@@ -75,6 +77,7 @@ const Footer = () => (
               circular
               color="linkedin"
               icon="linkedin"
+              style={{ width: 40, height: 40 }}
               href="https://www.linkedin.com/company/bug-zero-io/"
               target="_blank"
             />
@@ -82,15 +85,30 @@ const Footer = () => (
               circular
               color="youtube"
               icon="youtube"
+              style={{ width: 40, height: 40 }}
               href="https://www.youtube.com/@bugzero"
               target="_blank"
             />
             <Button
               circular
+              color="blue"
+              style={{
+                width: 40,
+                height: 40,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
               href="https://bsky.app/profile/bugzero.bsky.social"
               target="_blank"
             >
-              <FontAwesomeIcon icon={faBluesky} />
+              <FontAwesomeIcon
+                icon={faBluesky}
+                style={{
+                  fontSize: "1.2em",
+                  display: "block",
+                }}
+              />
             </Button>
           </Grid.Column>
         </Grid.Row>
